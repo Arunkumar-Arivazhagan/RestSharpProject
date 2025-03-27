@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestSharpProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fbc4550d234c5dbe42ca9959f121969cb502f464")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestSharpProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestSharpProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
