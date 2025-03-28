@@ -1,5 +1,6 @@
 using FluentAssertions;
 using RestSharp;
+using RestSharpProject.Models;
 using Xunit.Abstractions;
 
 namespace RestSharpProject;
@@ -27,8 +28,8 @@ public class UnitTest1
         //Rest Request
         var request = new RestRequest("Product/GetProductById/1");
         //Perform GET operation
-        var response = await client.GetAsync(request);
+        var response = await client.GetAsync<Product>(request);
         //Assert
-        response.Should().NotBeNull();
+        response?.Name.Should().Be("Keyboard");
     }
 }
