@@ -1,3 +1,4 @@
+using FluentAssertions;
 using RestSharp;
 using Xunit.Abstractions;
 
@@ -27,5 +28,7 @@ public class UnitTest1
         var request = new RestRequest("Product/GetProductById/1");
         //Perform GET operation
         var response = await client.GetAsync(request);
+        //Assert
+        response.Should().NotBeNull();
     }
 }
